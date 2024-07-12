@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %} HomePage {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="/static/index.css">
+{% endblock %}
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Home</h1>
+  <p class="lead">Choose a calculator to get started:</p>
+  <hr class="my-4">
+  <p>
+    <a class="btn btn-success btn-lg" href="{{ url_for('bmi') }}" role="button">BMI Calculator</a>
+    <a class="btn btn-success btn-lg" href="{{ url_for('bmr') }}" role="button">BMR Calculator</a> 
+  </p>
+</div>
+{% endblock %}
